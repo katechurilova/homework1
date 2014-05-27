@@ -19,9 +19,11 @@ class RockPaperScissors
   end
   
   def self.tournament(net)
-    net.each do |i| 
-    	self.winner(net[i][0], net[i][1])
-  	end
+    #net.each do |i| 
+    #	group[]=winner(winner(i[0][0],i[0][1]),winner(i[1][0],i[1][1]))
+  	#end
+  	group1=winner(winner(net[0][0][0],net[0][0][1]),winner(net[0][1][0],net[0][1][1]))
+  	group2=winner(winner(net[1][0][0],net[1][0][1]),winner(net[1][1][0],net[1][1][1]))
+  	winner(grour1,group2)
   end	
-  
 end
