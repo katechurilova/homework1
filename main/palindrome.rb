@@ -2,6 +2,10 @@ module Palindrome
   extend self
 
   def palindrome?(str)
-    false
+  	if(str!=nil&&str.downcase.gsub(/\W/,"")==str.downcase.gsub(/\W/,"").reverse&&!str.empty?)
+    	return true
+    else
+    	return false
+    end
   end
 end
